@@ -13,9 +13,9 @@ class Material(models.Model):
 
 class Furniture(models.Model):
     name = models.CharField(max_length=50) #On définit le titre, son type(texte) et on limite à 50 caractères
-    type = models.ForeignKey(Type)
+    type = models.ForeignKey(Type, on_delete=models.SET_NULL, null=True)
     price = models.FloatField(default=0.00)
-    dimensions = models.CharField(max_length=50) #prise en compte de longueur x largeur x profondeur
+    dimensions = models.CharField(max_length=50, null=True) #prise en compte de longueur x largeur x profondeur
     colors = models.ManyToManyField(Color) #car il y a plrs couleur pour un meuble et une couleur pour plusieurs meubles
     descritpion = models.TextField(null=True) #c'est ok que la place soit vide
     materials = models.ManyToManyField(Material)
