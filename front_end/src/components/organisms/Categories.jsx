@@ -8,31 +8,31 @@ import objects from '../../assets/objects.jpg'
 const Categories = () => {
     return (
         <>
-            <div className=''>
-            <div className="avatar">
-                <p>chairs & sofas</p>
-                <div className="w-30 rounded-full">
-                    <img src={chairs} />
+            <div className='avatar-group'>
+                <div className="avatar">
+                    <p className='text-xl absolute'>chairs & sofas</p>
+                    <div className="w-23 rounded-full">
+                        <img src={chairs} />
+                    </div>
                 </div>
-            </div>
-            <div className="avatar">
-            <p>lamps</p>
-                <div className="w-30 rounded-full">
-                    <img src={lamps} />
+                <div className="avatar">
+                    <p className='text-xl absolute'>lamps</p>
+                    <div className="w-23 rounded-full">
+                        <img src={lamps} />
+                    </div>
                 </div>
-            </div>
-            <div className="avatar">
-            <p>tables</p>
-                <div className="w-30 rounded-full">
-                    <img src={tables} />
+                <div className="avatar">
+                    <p className='text-xl absolute'>tables</p>
+                    <div className="w-23 rounded-full">
+                        <img src={tables} />
+                    </div>
                 </div>
-            </div>
-            <div className="avatar">
-            <p>objects</p>
-                <div className="w-30 rounded-full">
-                    <img src={objects} />
+                <div className="avatar">
+                    <p className='text-xl absolute'>objects</p>
+                    <div className="w-23 rounded-full">
+                        <img src={objects} />
+                    </div>
                 </div>
-            </div>
             </div>
         </>
     )
