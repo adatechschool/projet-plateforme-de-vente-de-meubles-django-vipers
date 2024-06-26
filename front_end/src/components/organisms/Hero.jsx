@@ -3,7 +3,7 @@ import heroBanneer from '../../assets/hero_banneer.jpg'
 
 const Hero = () => {
     return (
-        <div>
+        <div className='pt-14'>
             {/* hero section */}
 
             <div className='flex flex-col pt-12 mt-5 relative'>

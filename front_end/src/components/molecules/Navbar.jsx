@@ -6,12 +6,24 @@ import Admins from '../atoms/Admins'
 
 const Navbar = () => {
   return (
-    <div className='flex'>
-      <Menu_burger/>
-      <Search_bar/>
-      <Admins />
-      <Account_logos />
+
+    <div className='fixed w-full z-50 '>
+      <div className='flex pt-5 pb-2 pr-8'>
+
+        {/* Menu burger à gauche */}
+        <div className='flex items-center'>
+          <Menu_burger />
+        </div>
+
+        {/* Le reste à droite */}
+        <div className='flex ml-auto items-center'>
+          <Admins />
+          <Search_bar />
+          <Account_logos />
+        </div>
+      </div>
     </div>
+
   )
 }
 
