@@ -12,9 +12,7 @@ const Social_medias = () => {
   return (
     <>
       <div className="space-y-3 pt-7 flex flex-col items-center">
-      <h1 className="text-xl lowercase font-thin">
-          Follow Us
-        </h1>
+    
         
       <ul className='flex space-x-4 w-[200px]'>
           <li><a href="https://www.facebook.com"><img src={facebookLogo} alt="" /></a></li>
