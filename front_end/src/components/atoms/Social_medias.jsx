@@ -10,20 +10,24 @@ import tictacLogo from '../../assets/tic-tac.png';
 const Social_medias = () => {
 
   return (
-  <>
+    <>
+      <div className="space-y-3 pt-7 flex flex-col items-center">
+      <h1 className="text-xl lowercase font-thin">
+          Follow Us
+        </h1>
+        
+      <ul className='flex space-x-4 w-[200px]'>
+          <li><a href="https://www.facebook.com"><img src={facebookLogo} alt="" /></a></li>
+          <li><a href="https://www.twitter.com"><img src={twitterLogo} alt="" /></a></li>
+          <li><a href="https://www.instagram.com"><img src={instagramLogo} alt="" /></a></li>
+          <li><a href="https://www.linkedin.com"><img src={linkedinLogo} alt="" /></a></li>
+          <li><a href="https://www.tictac.com"><img src={tictacLogo} alt="" /></a></li>
 
-    <ul>
+        </ul>
+      </div>
 
-      <li><a href="https://www.facebook.com"><img src={facebookLogo} alt="" /></a></li>
-      <li><a href="https://www.twitter.com"><img src={twitterLogo} alt="" /></a></li>
-      <li><a href="https://www.instagram.com"><img src={instagramLogo} alt="" /></a></li>
-      <li><a href="https://www.linkedin.com"><img src={linkedinLogo} alt="" /></a></li>
-      <li><a href="https://www.tictac.com"><img src={tictacLogo} alt="" /></a></li>
-
-    </ul>
-    
-  </>
-);
+    </>
+  );
 };
 
 export default Social_medias
