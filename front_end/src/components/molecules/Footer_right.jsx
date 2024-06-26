@@ -1,4 +1,6 @@
 import React from 'react'
+import About_us from '../atoms/About_us'
+
 
 const Footer_right = () => {
   return (
@@ -9,7 +11,7 @@ const Footer_right = () => {
         <h1 className="text-4xl font-bold">
           About Us
         </h1>
-        <p className="text-sm max-w-[300px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta cupiditate excepturi exercitationem impedit consequatur possimus laborum veritatis dolorum culpa quia, aliquid maiores reprehenderit obcaecati facilis.</p>
+          <About_us />
       </div>
 
     </div>
