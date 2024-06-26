@@ -1,10 +1,11 @@
 import React from 'react'
-import Social_medias from '../../components/atoms/Social_medias.jsx'
+import Social_medias from '../atoms/Social_medias'
 
 const Footer_center = () => {
   return (
     <div>
-      <Social_medias />
+      <Social_medias/>
+      
     </div>
   )
 }
