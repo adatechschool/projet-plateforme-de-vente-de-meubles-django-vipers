@@ -5,11 +5,20 @@ from django.db import models
 class Color(models.Model):
     name = models.fields.CharField(max_length=50) #clé étrangère dans l'idée de créer un id, de choisir l'id pour plus de choix de couleurs
 
+    def __str__(self):
+        return self.name
+
 class Type(models.Model):
     name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
+
 class Material(models.Model):
     name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
 
 class Furniture(models.Model):
     name = models.CharField(max_length=50) #On définit le titre, son type(texte) et on limite à 50 caractères
@@ -21,4 +30,7 @@ class Furniture(models.Model):
     materials = models.ManyToManyField(Material)
     available = models.BooleanField(default=True)
     image = models.ImageField(upload_to='media/images', blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} ({self.available})"
 
