@@ -1,0 +1,28 @@
+[
+    {
+        "model": "furniture.Furniture",
+        "fields": {
+            "id": 1,
+            "name": "Sofa bleu",
+            "type": null,
+            "price": 100.00,
+            "dimensions": "200X300X100",
+            "description": "Blablabla",
+            "available": true,
+            "image": "images/vase_ocean2.jpg"
+        }
+    },
+    {
+        "model": "furniture.Furniture",
+        "fields": {
+            "id": 2,
+            "name": "Table basse",
+            "type": null,
+            "price": 80.00,
+            "dimensions": "200X300X100",
+            "description": "Truc machin",
+            "available": false,
+            "image": "images/vase_ocean2.jpg"
+        }
+    }
+]

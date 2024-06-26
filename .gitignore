@@ -1,4 +1,5 @@
 front_end/node_modules
 back_end/env
 __pycache__
+back_end/django_vipers_api/media
 /back_end/django_vipers_api/db.sqlite3
