@@ -29,7 +29,7 @@ class Furniture(models.Model):
     description = models.TextField(null=True) #c'est ok que la place soit vide
     materials = models.ManyToManyField(Material)
     available = models.BooleanField(default=True)
-    image = models.ImageField(upload_to='images', blank=True, null=True)
+    image = models.ImageField(upload_to='media/images', blank=True, null=True)
 
     def __str__(self):
         return f"{self.name} ({self.available})"
