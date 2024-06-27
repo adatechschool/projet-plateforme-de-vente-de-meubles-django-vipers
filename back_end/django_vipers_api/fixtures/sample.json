@@ -1,0 +1,285 @@
+[
+  {
+    "model": "furniture.furniture",
+    "pk": 3,
+    "fields": {
+      "name": "Fauteuil Cuir Rose",
+      "type": 1,
+      "price": 50.0,
+      "dimensions": "100X50X50",
+      "description": "Magnifique fauteuil en cuir rose, tr�s bon �tat",
+      "available": true,
+      "image1": "media/images/fauteuil_cuir_rose1.jpg",
+      "image2": "media/images/fauteuil_cuir_rose2.jpg",
+      "colors": [2],
+      "materials": [2]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 4,
+    "fields": {
+      "name": "Fauteuil Cuir Orange",
+      "type": 1,
+      "price": 50.0,
+      "dimensions": "100X50X50",
+      "description": "Tr�s beau fauteuil en cuir orange, bon �tat",
+      "available": true,
+      "image1": "media/images/fauteuil_cuir_orange1.jpg",
+      "image2": "media/images/fauteuil_cuir_orange2.jpg",
+      "colors": [9],
+      "materials": [2]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 5,
+    "fields": {
+      "name": "Fauteuil Barbie",
+      "type": 1,
+      "price": 50.0,
+      "dimensions": "100X50X50",
+      "description": "Beau fauteuil violet",
+      "available": true,
+      "image1": "media/images/fauteuil_barbie1.jpg",
+      "image2": "media/images/fauteuil_barbie2.jpg",
+      "colors": [10],
+      "materials": [3]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 6,
+    "fields": {
+      "name": "Fauteuil Osier",
+      "type": 1,
+      "price": 50.0,
+      "dimensions": "120X50X50",
+      "description": "Superbe fauteuil en osier, tr�s bon �tat",
+      "available": true,
+      "image1": "media/images/chaise_osier1.jpg",
+      "image2": "media/images/chaise_osier2.jpg",
+      "colors": [12],
+      "materials": [11]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 7,
+    "fields": {
+      "name": "Grande Table Chene",
+      "type": 2,
+      "price": 150.0,
+      "dimensions": "300X100X100",
+      "description": "Table a manger, pour grande famille, tr�s bon �tat, elle bouge un peu mais en vrai ca va.",
+      "available": true,
+      "image1": "media/images/table_chene1.jpg",
+      "image2": "media/images/table_chene2.jpg",
+      "colors": [5],
+      "materials": [1]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 8,
+    "fields": {
+      "name": "Table Marbre",
+      "type": 2,
+      "price": 20.0,
+      "dimensions": "80X50X50",
+      "description": "Petite table en marbre, propre pour le petit d�j",
+      "available": true,
+      "image1": "media/images/table_basse_marbre1.jpg",
+      "image2": "",
+      "colors": [7],
+      "materials": [7]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 9,
+    "fields": {
+      "name": "Table Derbouka",
+      "type": 2,
+      "price": 10.0,
+      "dimensions": "20X20X40",
+      "description": "Petite table de nuit, peut �tre utilis�e comme derbouka pour des nuits de folie",
+      "available": true,
+      "image1": "media/images/table_tambour_jaune1.jpg",
+      "image2": "media/images/table_tambour_jaune2.jpg",
+      "colors": [4],
+      "materials": [3]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 10,
+    "fields": {
+      "name": "Table Ronde",
+      "type": 2,
+      "price": 30.0,
+      "dimensions": "60X60X100",
+      "description": "Une table ronde, c'est une table, elle est ronde",
+      "available": true,
+      "image1": "media/images/table_ronde_noir1.jpg",
+      "image2": "",
+      "colors": [6],
+      "materials": [3]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 11,
+    "fields": {
+      "name": "Lustre",
+      "type": 3,
+      "price": 40.0,
+      "dimensions": "50X50",
+      "description": "Superbe lustre Swarovski , grave brillant, occaz en or",
+      "available": true,
+      "image1": "media/images/lustre2.jpg",
+      "image2": "media/images/lustre1.jpg",
+      "colors": [11],
+      "materials": [4]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 12,
+    "fields": {
+      "name": "Lampe",
+      "type": 3,
+      "price": 10.0,
+      "dimensions": "50X10",
+      "description": "Une lampe, svp j'ai besoin d'argent",
+      "available": true,
+      "image1": "media/images/lampe_applique1.jpg",
+      "image2": "",
+      "colors": [11],
+      "materials": [4]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 13,
+    "fields": {
+      "name": "Spot",
+      "type": 3,
+      "price": 10.0,
+      "dimensions": "100X10",
+      "description": "Un spot � fix�, il est beau, tr�s bon �tat",
+      "available": true,
+      "image1": "media/images/spot1.jpg",
+      "image2": "",
+      "colors": [6],
+      "materials": [4]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 14,
+    "fields": {
+      "name": "Lampe a Pied",
+      "type": 3,
+      "price": 40.0,
+      "dimensions": "150X30X30",
+      "description": "Une magnifique lampe a pied, tr�s utile pour les brushing ou autre",
+      "available": true,
+      "image1": "media/images/lampe_blanche1.jpg",
+      "image2": "media/images/lampe_blanche2.jpg",
+      "colors": [7],
+      "materials": [4]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 15,
+    "fields": {
+      "name": "Miroir",
+      "type": 4,
+      "price": 20.0,
+      "dimensions": "60X60",
+      "description": "Un tr�s beau mirroir rond, bon �tat",
+      "available": true,
+      "image1": "media/images/miroir1.jpg",
+      "image2": "media/images/miroir2.jpg",
+      "colors": [2],
+      "materials": [8]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 16,
+    "fields": {
+      "name": "Vase c�ramique",
+      "type": 4,
+      "price": 500.0,
+      "dimensions": "20X10",
+      "description": "Vase Ming original, expertis�, une vraie p�pite",
+      "available": true,
+      "image1": "media/images/vase_ceramique1.jpg",
+      "image2": "media/images/vase_ceramique2.jpg",
+      "colors": [3],
+      "materials": [9]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 17,
+    "fields": {
+      "name": "Bougeoir Ch�tien",
+      "type": 4,
+      "price": 10.0,
+      "dimensions": "20X10",
+      "description": "Bougeoir pour r�pandre la parole du seigneur",
+      "available": true,
+      "image1": "media/images/vase_chretien1.jpg",
+      "image2": "media/images/vase_chretien2.jpg",
+      "colors": [2],
+      "materials": [8]
+    }
+  },
+  {
+    "model": "furniture.furniture",
+    "pk": 18,
+    "fields": {
+      "name": "Petit Vase",
+      "type": 4,
+      "price": 5.0,
+      "dimensions": "10X10",
+      "description": "Petit vase bleu, pour fleur ou autre, bon �tat mais un peu sale",
+      "available": true,
+      "image1": "media/images/vase_bleu1.jpg",
+      "image2": "media/images/vase_bleu2.jpg",
+      "colors": [3],
+      "materials": [8]
+    }
+  },
+  { "model": "furniture.color", "pk": 1, "fields": { "name": "Rouge" } },
+  { "model": "furniture.color", "pk": 2, "fields": { "name": "Rose" } },
+  { "model": "furniture.color", "pk": 3, "fields": { "name": "Bleu" } },
+  { "model": "furniture.color", "pk": 4, "fields": { "name": "Jaune" } },
+  { "model": "furniture.color", "pk": 5, "fields": { "name": "Marron" } },
+  { "model": "furniture.color", "pk": 6, "fields": { "name": "Noir" } },
+  { "model": "furniture.color", "pk": 7, "fields": { "name": "Blanc" } },
+  { "model": "furniture.color", "pk": 8, "fields": { "name": "Vert" } },
+  { "model": "furniture.color", "pk": 9, "fields": { "name": "Orange" } },
+  { "model": "furniture.color", "pk": 10, "fields": { "name": "Violet" } },
+  { "model": "furniture.color", "pk": 11, "fields": { "name": "Dor�" } },
+  { "model": "furniture.color", "pk": 12, "fields": { "name": "Beige" } },
+  { "model": "furniture.type", "pk": 1, "fields": { "name": "Chaise" } },
+  { "model": "furniture.type", "pk": 2, "fields": { "name": "Table" } },
+  { "model": "furniture.type", "pk": 3, "fields": { "name": "Luminaire" } },
+  { "model": "furniture.type", "pk": 4, "fields": { "name": "Objet" } },
+  { "model": "furniture.material", "pk": 1, "fields": { "name": "Bois" } },
+  { "model": "furniture.material", "pk": 2, "fields": { "name": "Cuir" } },
+  { "model": "furniture.material", "pk": 3, "fields": { "name": "Plastique" } },
+  { "model": "furniture.material", "pk": 4, "fields": { "name": "M�tal" } },
+  { "model": "furniture.material", "pk": 5, "fields": { "name": "Polyester" } },
+  { "model": "furniture.material", "pk": 6, "fields": { "name": "Velour" } },
+  { "model": "furniture.material", "pk": 7, "fields": { "name": "Marbre" } },
+  { "model": "furniture.material", "pk": 8, "fields": { "name": "Verre" } },
+  { "model": "furniture.material", "pk": 9, "fields": { "name": "C�ramique" } },
+  { "model": "furniture.material", "pk": 10, "fields": { "name": "Paille" } },
+  { "model": "furniture.material", "pk": 11, "fields": { "name": "Osier" } }
+]
