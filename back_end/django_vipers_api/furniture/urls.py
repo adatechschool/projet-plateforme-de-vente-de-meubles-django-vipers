@@ -1,4 +1,3 @@
-# posts/urls.py
 # créer un chemin URL pour 6 actions (GET, POST...etc) 
 #pour lier les requêtes aux URLS
 

@@ -23,7 +23,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('furniture.urls'))
+    path('api/', include('furniture.urls')),
+    path('api/', include('users.urls'))
 ]
 
+# pour afficher les images avec l'URL
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# pour l'authentification en cours
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
+]
+
