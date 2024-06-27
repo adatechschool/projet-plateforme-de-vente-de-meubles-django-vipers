@@ -1,5 +1,6 @@
 import React from "react";
 import Footer_menu from "../atoms/Footer_menu";
+import Paiement_method from "../atoms/Paiement_method";
 
 
 const Footer_left = () => {
@@ -9,6 +10,8 @@ const Footer_left = () => {
         <h1 className="lowercase text-4xl ">Vipers Furnitures</h1>
           <Footer_menu />
       </div>
+
+      <Paiement_method />
     </div>
   );
 };
