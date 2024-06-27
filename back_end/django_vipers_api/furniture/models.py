@@ -25,9 +25,9 @@ class Furniture(models.Model):
     type = models.ForeignKey(Type, on_delete=models.SET_NULL, null=True)
     price = models.FloatField(default=0.00)
     dimensions = models.CharField(max_length=50, null=True) #prise en compte de longueur x largeur x profondeur
-    colors = models.ManyToManyField(Color) #car il y a plrs couleur pour un meuble et une couleur pour plusieurs meubles
+    colors = models.ManyToManyField(Color, blank=True) #car il y a plrs couleur pour un meuble et une couleur pour plusieurs meubles
     description = models.TextField(null=True) #c'est ok que la place soit vide
-    materials = models.ManyToManyField(Material)
+    materials = models.ManyToManyField(Material, blank=True)
     available = models.BooleanField(default=True)
     image = models.ImageField(upload_to='media/images', blank=True, null=True)
 
