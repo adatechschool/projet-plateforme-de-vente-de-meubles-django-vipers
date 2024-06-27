@@ -4,9 +4,7 @@ function Price() {
   return (
     <div>
 
-<label>Price</label>
-     <input type="number" name="price"  class="form-control" />
-
+<p class ="Price font-bold " > Price : 250 € </p>
     </div>
   )
 }
