@@ -227,7 +227,7 @@
     "model": "furniture.furniture",
     "pk": 17,
     "fields": {
-      "name": "Bougeoir Ch�tien",
+      "name": "Bougeoir Chr�tien",
       "type": 4,
       "price": 10.0,
       "dimensions": "20X10",
