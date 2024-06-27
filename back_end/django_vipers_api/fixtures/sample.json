@@ -9,8 +9,8 @@
       "dimensions": "100X50X50",
       "description": "Magnifique fauteuil en cuir rose, tr�s bon �tat",
       "available": true,
-      "image1": "media/images/fauteuil_cuir_rose1.jpg",
-      "image2": "media/images/fauteuil_cuir_rose2.jpg",
+      "image1": "images/fauteuil_cuir_rose1.jpg",
+      "image2": "images/fauteuil_cuir_rose2.jpg",
       "colors": [2],
       "materials": [2]
     }
@@ -25,8 +25,8 @@
       "dimensions": "100X50X50",
       "description": "Tr�s beau fauteuil en cuir orange, bon �tat",
       "available": true,
-      "image1": "media/images/fauteuil_cuir_orange1.jpg",
-      "image2": "media/images/fauteuil_cuir_orange2.jpg",
+      "image1": "images/fauteuil_cuir_orange1.jpg",
+      "image2": "images/fauteuil_cuir_orange2.jpg",
       "colors": [9],
       "materials": [2]
     }
@@ -41,8 +41,8 @@
       "dimensions": "100X50X50",
       "description": "Beau fauteuil violet",
       "available": true,
-      "image1": "media/images/fauteuil_barbie1.jpg",
-      "image2": "media/images/fauteuil_barbie2.jpg",
+      "image1": "images/fauteuil_barbie1.jpg",
+      "image2": "images/fauteuil_barbie2.jpg",
       "colors": [10],
       "materials": [3]
     }
@@ -57,8 +57,8 @@
       "dimensions": "120X50X50",
       "description": "Superbe fauteuil en osier, tr�s bon �tat",
       "available": true,
-      "image1": "media/images/chaise_osier1.jpg",
-      "image2": "media/images/chaise_osier2.jpg",
+      "image1": "images/chaise_osier1.jpg",
+      "image2": "images/chaise_osier2.jpg",
       "colors": [12],
       "materials": [11]
     }
@@ -73,8 +73,8 @@
       "dimensions": "300X100X100",
       "description": "Table a manger, pour grande famille, tr�s bon �tat, elle bouge un peu mais en vrai ca va.",
       "available": true,
-      "image1": "media/images/table_chene1.jpg",
-      "image2": "media/images/table_chene2.jpg",
+      "image1": "images/table_chene1.jpg",
+      "image2": "images/table_chene2.jpg",
       "colors": [5],
       "materials": [1]
     }
@@ -89,7 +89,7 @@
       "dimensions": "80X50X50",
       "description": "Petite table en marbre, propre pour le petit d�j",
       "available": true,
-      "image1": "media/images/table_basse_marbre1.jpg",
+      "image1": "images/table_basse_marbre1.jpg",
       "image2": "",
       "colors": [7],
       "materials": [7]
@@ -105,8 +105,8 @@
       "dimensions": "20X20X40",
       "description": "Petite table de nuit, peut �tre utilis�e comme derbouka pour des nuits de folie",
       "available": true,
-      "image1": "media/images/table_tambour_jaune1.jpg",
-      "image2": "media/images/table_tambour_jaune2.jpg",
+      "image1": "images/table_tambour_jaune1.jpg",
+      "image2": "images/table_tambour_jaune2.jpg",
       "colors": [4],
       "materials": [3]
     }
@@ -121,7 +121,7 @@
       "dimensions": "60X60X100",
       "description": "Une table ronde, c'est une table, elle est ronde",
       "available": true,
-      "image1": "media/images/table_ronde_noir1.jpg",
+      "image1": "images/table_ronde_noir1.jpg",
       "image2": "",
       "colors": [6],
       "materials": [3]
@@ -137,8 +137,8 @@
       "dimensions": "50X50",
       "description": "Superbe lustre Swarovski , grave brillant, occaz en or",
       "available": true,
-      "image1": "media/images/lustre2.jpg",
-      "image2": "media/images/lustre1.jpg",
+      "image1": "images/lustre2.jpg",
+      "image2": "images/lustre1.jpg",
       "colors": [11],
       "materials": [4]
     }
@@ -153,7 +153,7 @@
       "dimensions": "50X10",
       "description": "Une lampe, svp j'ai besoin d'argent",
       "available": true,
-      "image1": "media/images/lampe_applique1.jpg",
+      "image1": "images/lampe_applique1.jpg",
       "image2": "",
       "colors": [11],
       "materials": [4]
@@ -169,7 +169,7 @@
       "dimensions": "100X10",
       "description": "Un spot � fix�, il est beau, tr�s bon �tat",
       "available": true,
-      "image1": "media/images/spot1.jpg",
+      "image1": "images/spot1.jpg",
       "image2": "",
       "colors": [6],
       "materials": [4]
@@ -185,8 +185,8 @@
       "dimensions": "150X30X30",
       "description": "Une magnifique lampe a pied, tr�s utile pour les brushing ou autre",
       "available": true,
-      "image1": "media/images/lampe_blanche1.jpg",
-      "image2": "media/images/lampe_blanche2.jpg",
+      "image1": "images/lampe_blanche1.jpg",
+      "image2": "images/lampe_blanche2.jpg",
       "colors": [7],
       "materials": [4]
     }
@@ -201,8 +201,8 @@
       "dimensions": "60X60",
       "description": "Un tr�s beau mirroir rond, bon �tat",
       "available": true,
-      "image1": "media/images/miroir1.jpg",
-      "image2": "media/images/miroir2.jpg",
+      "image1": "images/miroir1.jpg",
+      "image2": "images/miroir2.jpg",
       "colors": [2],
       "materials": [8]
     }
@@ -217,8 +217,8 @@
       "dimensions": "20X10",
       "description": "Vase Ming original, expertis�, une vraie p�pite",
       "available": true,
-      "image1": "media/images/vase_ceramique1.jpg",
-      "image2": "media/images/vase_ceramique2.jpg",
+      "image1": "images/vase_ceramique1.jpg",
+      "image2": "images/vase_ceramique2.jpg",
       "colors": [3],
       "materials": [9]
     }
@@ -233,8 +233,8 @@
       "dimensions": "20X10",
       "description": "Bougeoir pour r�pandre la parole du seigneur",
       "available": true,
-      "image1": "media/images/vase_chretien1.jpg",
-      "image2": "media/images/vase_chretien2.jpg",
+      "image1": "images/vase_chretien1.jpg",
+      "image2": "images/vase_chretien2.jpg",
       "colors": [2],
       "materials": [8]
     }
@@ -249,8 +249,8 @@
       "dimensions": "10X10",
       "description": "Petit vase bleu, pour fleur ou autre, bon �tat mais un peu sale",
       "available": true,
-      "image1": "media/images/vase_bleu1.jpg",
-      "image2": "media/images/vase_bleu2.jpg",
+      "image1": "images/vase_bleu1.jpg",
+      "image2": "images/vase_bleu2.jpg",
       "colors": [3],
       "materials": [8]
     }
