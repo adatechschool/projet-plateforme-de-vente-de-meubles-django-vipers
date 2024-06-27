@@ -6,7 +6,7 @@ import Footer_right from '../../components/molecules/Footer_right'
 
 const Footer = () => {
   return (
-    <div className='bg-[#B4A37F] text-white mt-3'>
+    <div className='bg-[rgb(201,181,137)] text-white mt-3'>
 
       {/* FOOTER ELEMENTS */}
       <div className='pt-12 pb-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center'>
