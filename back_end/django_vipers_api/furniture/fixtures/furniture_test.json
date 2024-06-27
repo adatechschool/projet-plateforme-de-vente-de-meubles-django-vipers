@@ -9,7 +9,8 @@
             "dimensions": "200X300X100",
             "description": "Blablabla",
             "available": true,
-            "image": "images/vase_ocean2.jpg"
+            "image1": "images/vase_ocean2.jpg",
+            "image2": null
         }
     },
     {
@@ -22,7 +23,8 @@
             "dimensions": "200X300X100",
             "description": "Truc machin",
             "available": false,
-            "image": "images/vase_ocean2.jpg"
+            "image1": "images/vase_ocean2.jpg",
+            "image2": "images/vase_ocean2.jpg"
         }
     }
 ]
