@@ -1,8 +1,8 @@
-import React from 'react'
-import Footer_center from '../../components/molecules/Footer_center'
-import Footer_left from '../../components/molecules/Footer_left'
-import Footer_right from '../../components/molecules/Footer_right'
-
+import React from 'react';
+import Footer_center from '../../components/molecules/Footer_center';
+import Footer_left from '../../components/molecules/Footer_left';
+import Footer_right from '../../components/molecules/Footer_right';
+import Paiement_method from '../atoms/Paiement_method';
 
 const Footer = () => {
   return (
@@ -17,16 +17,20 @@ const Footer = () => {
       </div>
 
       {/* COPYRIGHT SECTION */}
-      <div className='mt-2 pt-2 pb-4 '>
-      <p className='text-center text-sm'> Copyright &copy; 2024 Django Vipers. All rights reserved.</p>
-      <p className='text-center text-xs'>
-        CGV & Mentions Légales | Politique de gestion de confidentialité.
-      </p>
+      <div className='flex flex-col md:flex-row items-center justify-center mt-2 pt-2 pb-4'>
+        
+        <div className='text-center'>
+          <p className='text-sm'>
+            Copyright &copy; 2024 Django Vipers. All rights reserved.
+          </p>
+          <p className='text-xs'>
+            CGV & Mentions Légales | Politique de gestion de confidentialité.
+          </p>
+        </div>
       </div>
 
-
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

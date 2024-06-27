@@ -2,6 +2,7 @@ import Navbar from "./components/molecules/Navbar";
 import Home from "./components/pages/Home";
 import Footer from "./components/organisms/Footer";
 
+
 function App() {
   return (
     <>
@@ -9,6 +10,7 @@ function App() {
         <Navbar />
         <Home />
         <Footer />
+        
       </div>
     </>
   );

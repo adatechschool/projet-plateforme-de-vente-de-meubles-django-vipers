@@ -5,6 +5,7 @@ const Product_details = () => {
     <div>
 <button className="btn bg-[#B4A37F] text-white mt-3" >Add To Cart</button>
     </div>
+    
   )
 }
 
