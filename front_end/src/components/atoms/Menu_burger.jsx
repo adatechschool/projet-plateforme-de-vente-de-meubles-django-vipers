@@ -37,16 +37,16 @@ const Menu_burger = () => {
 bg-[#B4A37F] ${isMenuClicked ? '' : 'hidden'}`}>
         <ul className='text-2xl lowercase font-bold'>
           <li className="whitespace-nowrap"> <a href='#'>Chairs</a></li>          
-          <li className="whitespace-nowrap">Tables</li>
-          <li className="whitespace-nowrap">Objects</li>
-          <li className="whitespace-nowrap">Favoris</li>
+          <li className="whitespace-nowrap"><a href='#'>Tables</a></li>
+          <li className="whitespace-nowrap"><a href='#'>Objects</a></li>
+          <li className="whitespace-nowrap"><a href='#'>Favorites</a></li>
         </ul>
 
         <ul className='text-sm leading-tight pt-44 lowercase font-extralight'>
-          <li className="whitespace-nowrap">admin</li>
-          <li className="whitespace-nowrap">re-sell platform</li>
-          <li className="whitespace-nowrap">My account</li>
-          <li className="whitespace-nowrap">Sign Up</li>
+          <li className="whitespace-nowrap"><a href='#'>admin</a></li>
+          <li className="whitespace-nowrap"><a href='#'>re-sell platform</a></li>
+          <li className="whitespace-nowrap"><a href='#'>My account</a></li>
+          <li className="whitespace-nowrap"><a href='#'>Sign Up</a></li>
         </ul>
       </div>
 

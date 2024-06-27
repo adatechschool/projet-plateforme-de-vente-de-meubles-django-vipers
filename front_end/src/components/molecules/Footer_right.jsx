@@ -1,5 +1,6 @@
 import React from 'react'
 import About_us from '../atoms/About_us'
+import Contact_us from '../atoms/Contact_us'
 
 
 const Footer_right = () => {
@@ -8,7 +9,7 @@ const Footer_right = () => {
 
       <div
         className="space-y-6">
-        <h1 className="text-4xl font-bold">
+        <h1 className="lowercase text-4xl">
           About Us
         </h1>
           <About_us />

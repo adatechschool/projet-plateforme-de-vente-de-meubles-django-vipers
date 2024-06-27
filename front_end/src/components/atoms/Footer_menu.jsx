@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer_menu = () => {
   return (
-    <div>
+    <div className="lowercase font-extralight text-sm leading-3">
       <ul className="space-y-2">
         <li>
           <a href="#">admin</a>

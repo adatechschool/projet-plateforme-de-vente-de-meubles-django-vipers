@@ -6,12 +6,14 @@ import Contact_us from "../atoms/Contact_us.jsx";
 const Footer_center = () => {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-4xl font-bold">Follow Us</h1>
+      <h1 className="lowercase text-4xl">Follow Us</h1>
 
       <Social_medias />
-      <h1 className="text-4xl font-bold mb-4 mt-4">Nous contacter</h1>
-      <Contact_us />
+
+      <h1 className=" mt-4 lowercase text-1xl ">Contacts</h1>
+          <Contact_us />  
     </div>
+    
   );
 };
 
