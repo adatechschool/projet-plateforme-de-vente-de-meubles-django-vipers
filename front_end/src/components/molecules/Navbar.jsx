@@ -7,8 +7,8 @@ import Admins from '../atoms/Admins'
 const Navbar = () => {
   return (
 
-    <div className='fixed w-full z-50 '>
-      <div className='flex pt-5 pb-2 pr-8'>
+    <div className='fixed w-full z-50 backdrop-blur-sm bg-white-200 bg-opacity-50'>
+      <div className='flex pr-8'>
 
         {/* Menu burger à gauche */}
         <div className='flex items-center'>
