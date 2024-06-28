@@ -10,7 +10,7 @@ const Categories = () => {
         <>
 
 
-            <h1 className=' pl-24 pb-2 text-8xl font-light text-left lowercase'>categories.</h1>
+            <h1 className=' pl-24 pb-2 text-8xl font-extralight text-left lowercase'>categories.</h1>
             <div className='relative grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pl-20 pr-20 pt-2 pb-10 text-white font-normal'>
 
 
