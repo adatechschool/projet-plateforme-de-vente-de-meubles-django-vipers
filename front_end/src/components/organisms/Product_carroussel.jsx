@@ -1,11 +1,11 @@
 import Product_card from "../molecules/Product_card";
 
-const Product_carroussel = (id) => {
+const Product_carroussel = () => {
   return (
     <>
       <div className="carousel space-x-4 w-full pt-5 pb-5 scroll-smooth relative">
         <div className="carousel-item w-64 relative group">
-          <Product_card product={product} />
+          <Product_card  />
         </div>
         <div className="carousel-item w-64 relative group">
           <Product_card />
