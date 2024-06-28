@@ -18,31 +18,30 @@ const Product_card = ({
 }) => {
   return (
     <div>
-      <div className="card card-compact bg-base-100 w-96 shadow-xl">
-   
-     <div>
-        <figure>
-          <Product_photo image={image} />
+      <div className="relative group box-content w-64 h-96">
+        <figure className="h-full transition duration-500 ease-in-out group-hover:blur-md">
+          <Product_photo className="" image={image} />
         </figure>
-        <div className="card-body">
-          <Product_price price={price} />
-          <Product_details
-            name={name}
-            dimensions={dimensions}
-            description={description}
-            available={available}
-            type={type}
-            colors={colors}
-            materials={materials}
-          />
-        </div>
-        <div className="card-actions flex">
-          <Add2cart />
-          <Add2favourite />
+        <div className="absolute inset-0 flex flex-col items-center opacity-0 group-hover:opacity-100">
+          <div className="card-body items-center">
+            <Product_details
+              name={name}
+              dimensions={dimensions}
+              description={description}
+              available={available}
+              type={type}
+              colors={colors}
+              materials={materials}
+            />
+            <Product_price price={price} />
+          </div>
+          <div className="flex flex-wrap flex-row gap-0.5 w-full">
+            <Add2cart />
+            <Add2favourite />
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+    </div >
   );
 };
 

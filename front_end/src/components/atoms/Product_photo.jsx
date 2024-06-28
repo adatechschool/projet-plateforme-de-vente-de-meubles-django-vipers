@@ -5,11 +5,11 @@ import Chairs from "../../assets/chairs_sofas.jpg";
 
 const Product_photo = ({ image }) => {
   return (
-    <div><img
-    src={image}
+    <><img
+    src={Chairs}
     alt=""
-    className=" "
-  /> </div>
+    className="object-cover rounded-box h-full"
+  /> </>
   )
 }
 
