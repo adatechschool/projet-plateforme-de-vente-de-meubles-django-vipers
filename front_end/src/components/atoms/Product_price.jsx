@@ -1,13 +1,9 @@
-import React from 'react'
-
-function Price() {
+const Product_price = ({ price }) => {
   return (
     <div>
-
-<p class ="Price font-bold " > Price : 250 € </p>
-     
+      <p className="Price font-bold "> price : {price} </p>
     </div>
-  )
-}
+  );
+};
 
-export default Price
+export default Product_price;

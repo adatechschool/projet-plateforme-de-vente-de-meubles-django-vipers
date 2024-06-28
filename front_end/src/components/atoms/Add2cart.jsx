@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Product_details = () => {
+const Add2cart = () => {
   return (
     <div>
 <button className="btn bg-[#B4A37F] text-white" >Add To Cart</button>
@@ -9,4 +9,4 @@ const Product_details = () => {
   )
 }
 
-export default Product_details
+export default Add2cart

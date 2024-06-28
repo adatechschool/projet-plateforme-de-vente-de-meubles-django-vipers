@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Product_photo = () => {
+import Chairs from "../../assets/chairs_sofas.jpg";
+
+
+const Product_photo = ({ image }) => {
   return (
-    <div>Product_photo</div>
+    <div><img
+    src={image}
+    alt=""
+    className=" "
+  /> </div>
   )
 }
 
