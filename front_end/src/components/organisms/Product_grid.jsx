@@ -6,7 +6,7 @@ import arrival4 from '../../assets/newarrivals/arrival4.jpg';
 import arrival5 from '../../assets/newarrivals/arrival5.jpg';
 import arrival6 from '../../assets/newarrivals/arrival6.jpg';
 
-const ProductGrid = () => {
+const ProductGrid = (id) => {
   return (
     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 pl-20 pr-20 pt-5">
 

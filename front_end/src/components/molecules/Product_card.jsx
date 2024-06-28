@@ -6,15 +6,7 @@ import Product_photo from "../atoms/Product_photo";
 
 
 const Product_card = ({
-  name,
-  price,
-  dimensions,
-  description,
-  available,
-  image,
-  type,
-  colors,
-  materials,
+  product
 }) => {
   return (
     <div>

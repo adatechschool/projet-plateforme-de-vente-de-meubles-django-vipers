@@ -8,7 +8,7 @@ import objects from '../../assets/objects.jpg'
 const Categories = () => {
     return (
         <>
-
+            {/* mapping des catégories, tu charge une nouvelle page qui va prendre comme argument Product_Grid avec l'ID de la catégorie <product_grid id={id} /> */}
 
             <h1 className=' pl-24 pb-2 text-8xl font-extralight text-left lowercase'>categories.</h1>
             <div className='relative grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pl-20 pr-20 pt-2 pb-10 text-white font-normal'>

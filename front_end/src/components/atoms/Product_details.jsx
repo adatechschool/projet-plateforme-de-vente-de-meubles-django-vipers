@@ -25,7 +25,7 @@ const Product_details = ({ name, dimensions, description, available, type, color
         </div>
 
         <div className="mt-4 text-gray-600">
-          Materials : </div>
+          </div>
           <span className="font-bold text-black">{materials}</span>
     
       </div>
