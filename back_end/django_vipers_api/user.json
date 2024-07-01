@@ -3,16 +3,16 @@
   "model": "users.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$720000$tydUdJdLieQ39S15c8cJAF$6T3bctF1hilGriXpf7NbuEBaBkvBH9rd1AHhS//HHIc=",
-    "last_login": "2024-06-28T13:12:30.638Z",
+    "password": "pbkdf2_sha256$720000$FiRMd4VvqEG4LxOLiqXgjQ$bM1qC5z1hCkqYvNxMrE98FPAG/7lVitlo9sXojuObiY=",
+    "last_login": "2024-06-28T13:11:43.662Z",
     "is_superuser": true,
-    "username": "admin",
+    "username": "Po",
     "first_name": "",
     "last_name": "",
-    "email": "baroukanou@yahoo.fr",
+    "email": "p.taillemite@gmail.com",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2024-06-28T13:10:33.083Z",
+    "date_joined": "2024-06-28T13:09:39.301Z",
     "phone_number": "0",
     "postal_adress": null,
     "groups": [],
@@ -23,20 +23,25 @@
   "model": "users.user",
   "pk": 2,
   "fields": {
-    "password": "pbkdf2_sha256$720000$ryOI35qh5cp37VXfSJHvr4$TB2J8/ScX+r5ou7GVkOVkl+5ghOxtCWIKUGYBxlTGWM=",
+    "password": "prout",
     "last_login": null,
-    "is_superuser": true,
-    "username": "Prout",
+    "is_superuser": false,
+    "username": "Powowoh",
     "first_name": "",
     "last_name": "",
-    "email": "prout@prout.fr",
-    "is_staff": true,
+    "email": "",
+    "is_staff": false,
     "is_active": true,
-    "date_joined": "2024-07-01T12:39:53Z",
-    "phone_number": "0102030405060708",
-    "postal_adress": "116 rue du Faubourg Saint Martin 75010 Paris",
+    "date_joined": "2024-07-01T13:47:35Z",
+    "phone_number": "010101010101",
+    "postal_adress": "124 rue du faubourg 75017 Paris",
     "groups": [],
-    "user_permissions": []
+    "user_permissions": [
+      17,
+      18,
+      19,
+      20
+    ]
   }
 }
 ]
