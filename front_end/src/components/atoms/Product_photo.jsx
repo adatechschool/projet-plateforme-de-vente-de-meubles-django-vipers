@@ -1,12 +1,10 @@
 import React from 'react'
 
-import Chairs from "../../assets/chairs_sofas.jpg";
 
-
-const Product_photo = ({ image }) => {
+const Product_photo = ({ product }) => {
   return (
     <><img
-    src={Chairs}
+    src={ product.image1 }
     alt=""
     className="object-cover rounded-box h-full"
   /> </>
