@@ -7,7 +7,7 @@ const Contact_us = () => {
 
       <p>116 Rue du Faubourd Saint Martin, Paris, France</p>
       <p> +33 6 50 48 65 54</p>
-      <p>teamfront@adatech.com</p>
+      <p>django_vipers@adatech.com</p>
 
 
 
