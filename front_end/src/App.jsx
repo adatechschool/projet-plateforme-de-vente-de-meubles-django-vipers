@@ -6,6 +6,8 @@ import Footer from "./components/organisms/Footer";
 import Connexion from "./components/pages/Connexion";
 import LoginForm from "./components/atoms/LoginForm"
 import SignupForm from "./components/atoms/SignupForm";
+import Cart from "./components/pages/Cart";
+import Shipping from "./components/pages/Shipping";
 
 function App() {
     return (
@@ -24,6 +26,9 @@ function App() {
                             <Route path="/connexion" element={<Connexion />}>
                                 <Route path="login" element={<LoginForm />} />
                                 <Route path="signup" element={<SignupForm />} />
+                            </Route>
+                            <Route path="/cart" element={<Cart />}>
+                                <Route path="Shipping" element={<Shipping />}/>
                             </Route>
                         </Routes>
                     </Router>
