@@ -6,6 +6,7 @@ import Footer from "./components/organisms/Footer";
 import Connexion from "./components/pages/Connexion";
 import LoginForm from "./components/atoms/LoginForm"
 import SignupForm from "./components/atoms/SignupForm";
+import Admin from "./components/pages/Admin";
 
 function App() {
     return (
@@ -25,6 +26,9 @@ function App() {
                                 <Route path="login" element={<LoginForm />} />
                                 <Route path="signup" element={<SignupForm />} />
                             </Route>
+
+                            {/* URL vers page admin */}
+                            <Route path="/admin" element={<Admin />} />
                         </Routes>
                     </Router>
                 </main>
