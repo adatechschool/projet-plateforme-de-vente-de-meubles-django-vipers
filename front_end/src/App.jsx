@@ -41,7 +41,14 @@ function App() {
               <Route path="/showproducts" element={<Showproducts />} />
 
               {/* URL vers la page Profil */}
+
               <Route path="/account" element={<Account />} />
+
+              <Route path="/account" element={<Account />}>
+                <Route path="profil" element={<Profil_form />} />
+                <Route path="edit" element={<Profil_edit />} />
+              </Route>
+
 
               {/* URL vers la page Admin */}
               <Route path="/admin" element={<Admin />} />
