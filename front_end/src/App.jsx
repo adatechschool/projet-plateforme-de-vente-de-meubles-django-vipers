@@ -6,17 +6,22 @@ import Connexion from "./components/pages/Connexion";
 import LoginForm from "./components/atoms/LoginForm";
 import SignupForm from "./components/atoms/SignupForm";
 import Product from "./components/pages/Product";
+import Showproducts from "./components/pages/Showproducts";
+import Account from "./components/pages/Account";
+import Admin from "./components/pages/Admin";
+import Cart from "./components/pages/Cart";
 
 function App() {
 
   return (
     <>
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
 
         <main className="grow">
-          {/* Router qui mène vers les diffèrentes pages, NavBar et Foooter ne change pas */}
-          <Router>
+          
+          
             <Routes>
               {/* URL vers Home */}
               <Route path="/" element={<Home />} />
@@ -27,15 +32,28 @@ function App() {
                 <Route path="signup" element={<SignupForm />} />
               </Route>
 
+              {/* URL vers la page d'un produit */}
               <Route path="/product" element={<Product />}/>
+
+              {/* URL vers la page des produits */}
+              <Route path="/showproducts" element={<Showproducts />}/>
+
+              {/* URL vers la page Profil */}
+              <Route path="/account" element={<Account />}/>
+
+              {/* URL vers la page Admin */}
+              <Route path="/admin" element={<Admin />}/>
+
+              {/* URL vers la page Panier */}
+              <Route path="/cart" element={<Cart />}/>
             
             
             </Routes>
-          </Router>
         </main>
 
         <Footer />
       </div>
+      </Router>
     </>
   );
 }

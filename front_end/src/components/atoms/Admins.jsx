@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const Admins = () => {
   return (
     <div className='pr-7 flex space-x-4 font-light text-2xl'>
-      <a href="#">admins.</a>
+      <Link to="/">home.</Link>
+      <Link to="/admin">admins.</Link>
       <a href="#">espace vendeur.</a>
     </div>
   )
