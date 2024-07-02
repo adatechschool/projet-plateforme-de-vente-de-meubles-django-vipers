@@ -35,7 +35,7 @@ const Menu_burger = () => {
 
       {/* MENU LISTE */}
       <div className={`z-40  w-[224px] sm:w-[50px] md:w-[200px] lg:w-[250px] xl:w-[300px] pl-10 absolute left-0 top-0 pt-20 pb-9  
-bg-[#B4A37F] ${isMenuClicked ? '' : 'hidden'}`}>
+bg-[#beaa7c] ${isMenuClicked ? '' : 'hidden'}`}>
         <ul className='text-2xl lowercase font-bold'>
           <li className="whitespace-nowrap"><Link to="/showproducts">Chairs</Link></li> 
           <li className="whitespace-nowrap"><Link to="/showproducts">Lamps</Link></li>        
