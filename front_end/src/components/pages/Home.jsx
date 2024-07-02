@@ -25,9 +25,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Recommandations />
+      <Recommandations arrivals = {arrivals} />
       <Arrivals arrivals = {arrivals} />
-      <Categories />
+      <Categories arrivals = {arrivals} />
     </div>
   );
 };
