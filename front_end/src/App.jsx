@@ -48,7 +48,7 @@ function App() {
               {/* URL vers la page Panier */}
               <Route path="/cart" element={<Cart />}/>
                {/* URL vers la page Shipping */}
-              <Route path="Shipping" element={<Shipping />}/>
+              <Route path="/cart/Shipping" element={<Shipping />}/>
             
             </Routes>
         </main>
