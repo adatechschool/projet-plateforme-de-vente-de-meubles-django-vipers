@@ -5,7 +5,7 @@ import Categories from "../organisms/Categories";
 import React, { useState, useEffect } from "react";
 
 const Home = () => {
-  const [arrivals, setArrivals] = useState([]);
+  const [products, setProducts] = useState([]);
   useEffect(() => {
     try {
       async function fetchFurniture() {
@@ -13,7 +13,7 @@ const Home = () => {
           "http://127.0.0.1:8000/api/furniture"
         );
         const parseFurnitureData = await furnitureData.json();
-        setArrivals(parseFurnitureData);
+        setProducts(parseFurnitureData);
         console.log(parseFurnitureData);
       }
       fetchFurniture();
@@ -25,9 +25,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Recommandations arrivals = {arrivals} />
-      <Arrivals arrivals = {arrivals} />
-      <Categories arrivals = {arrivals} />
+      <Recommandations recommandations = {products} />
+      <Arrivals arrivals = {products} />
+      <Categories />
     </div>
   );
 };

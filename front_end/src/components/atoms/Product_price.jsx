@@ -1,7 +1,7 @@
-const Product_price = ({ arrival }) => {
+const Product_price = ({ product }) => {
   return (
     <div>
-      <p className="Price font-bold "> price : {arrival.price}€ </p>
+      <p className="Price font-bold "> price : {product.price}€ </p>
     </div>
   );
 };

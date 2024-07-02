@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const Product_photo = ({ arrival }) => {
+const Product_photo = ({ product }) => {
   return (
     <><img
-    src={ arrival.image1 }
+    src={ product.image1 }
     alt=""
     className="object-cover rounded-box h-full"
   /> </>

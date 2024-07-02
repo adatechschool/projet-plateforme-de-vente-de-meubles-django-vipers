@@ -6,7 +6,7 @@ const ProductGrid = ({ arrivals }) => {
     <div className="relative grid grid-cols-1 md:grid-cols-3 gap-4 pl-20 pr-20 pt-5">
       {arrivals.slice(0, 6).map((arrival, index) => (
       <div key={index} className="relative group">
-        <Product_card arrival={arrival} />
+        <Product_card product={arrival} />
       </div>
       ))}
     </div>

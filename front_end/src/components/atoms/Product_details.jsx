@@ -1,32 +1,32 @@
 import React from 'react'
 
-const Product_details = ({ arrival }) => {
+const Product_details = ({ product }) => {
   return (
     <div>
         <div className=" mt-3 ml-3 flex flex-col gap-[60px]">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-black">{arrival.name}</h2>
+        <h2 className="text-2xl font-bold text-black">{product.name}</h2>
         <div className="mt-2 mb-2 flex space-x-2 items-center">
         <div className="">
-            {arrival.dimensions}
+            {product.dimensions}
           </div>
           <div className="">
-            {arrival.description}
+            {product.description}
           </div>
           <div className="">
-            {arrival.available}
+            {product.available}
           </div>
           <div className="">
-            {arrival.types}
+            {product.types}
           </div>
           <div className="">
-            {arrival.colors}
+            {product.colors}
           </div>
         </div>
 
         <div className="mt-4 text-gray-600">
           </div>
-          <span className="font-bold text-black">{arrival.materials}</span>
+          <span className="font-bold text-black">{product.materials}</span>
     
       </div>
     </div>

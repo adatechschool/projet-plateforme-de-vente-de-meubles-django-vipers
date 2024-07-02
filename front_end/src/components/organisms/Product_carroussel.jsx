@@ -1,30 +1,45 @@
 import Product_card from "../molecules/Product_card";
+import { useRef } from 'react';
 
-const Product_carroussel = ({ arrivals }) => {
+const Product_carroussel = ({ products }) => {
+  const carouselRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -carouselRef.current.clientWidth, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: carouselRef.current.clientWidth, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <>
-      <div className="carousel space-x-4 w-full pt-5 pb-5 scroll-smooth relative">
-      {arrivals.slice(0, 10).map((arrival, index) => (
-        <div key={index} className="carousel-item w-64 relative group">
-          <Product_card arrival={arrival} />
-        </div>
+    <div className="relative w-full pt-5">
+      <div ref={carouselRef} className="carousel space-x-4 w-full overflow-x-auto scroll-smooth relative">
+        {products.slice(0, 20).map((product, index) => (
+          <div key={index} className="carousel-item w-64 relative group">
+            <Product_card product={product} />
+          </div>
         ))}
-        <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+        </div>
+        <div className="absolute left-0 right-0 top-1/2 flex -translate-y-1/2 transform justify-between px-4">
           <button
             className="btn btn-circle"
-            onClick={(e) => alert("Scroll left")}
+            onClick={scrollLeft}
           >
             ❮
           </button>
           <button
             className="btn btn-circle"
-            onClick={(e) => alert("Scroll right")}
+            onClick={scrollRight}
           >
             ❯
           </button>
         </div>
       </div>
-    </>
   );
 };
 
