@@ -47,22 +47,11 @@ function App() {
 
               {/* URL vers la page Panier */}
               <Route path="/cart" element={<Cart />}/>
-            
+               {/* URL vers la page Shipping */}
+              <Route path="Shipping" element={<Shipping />}/>
             
             </Routes>
         </main>
-                            {/* URL vers page de connexion, soit Login, soit Signup */}
-                            <Route path="/connexion" element={<Connexion />}>
-                                <Route path="login" element={<LoginForm />} />
-                                <Route path="signup" element={<SignupForm />} />
-                            </Route>
-                            <Route path="/cart" element={<Cart />}>
-                                <Route path="Shipping" element={<Shipping />}/>
-                            </Route>
-                        </Routes>
-                    </Router>
-                </main>
-
         <Footer />
       </div>
       </Router>
