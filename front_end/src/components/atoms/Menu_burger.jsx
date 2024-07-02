@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 const Menu_burger = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
@@ -36,17 +37,18 @@ const Menu_burger = () => {
       <div className={`z-40  w-[224px] sm:w-[50px] md:w-[200px] lg:w-[250px] xl:w-[300px] pl-10 absolute left-0 top-0 pt-20 pb-9  
 bg-[#B4A37F] ${isMenuClicked ? '' : 'hidden'}`}>
         <ul className='text-2xl lowercase font-bold'>
-          <li className="whitespace-nowrap"> <a href='#'>Chairs</a></li>          
-          <li className="whitespace-nowrap"><a href='#'>Tables</a></li>
-          <li className="whitespace-nowrap"><a href='#'>Objects</a></li>
+          <li className="whitespace-nowrap"><Link to="/showproducts">Chairs</Link></li> 
+          <li className="whitespace-nowrap"><Link to="/showproducts">Lamps</Link></li>        
+          <li className="whitespace-nowrap"><Link to="/showproducts">Tables</Link></li>
+          <li className="whitespace-nowrap"><Link to="/showproducts">Objects</Link></li>
           <li className="whitespace-nowrap"><a href='#'>Favorites</a></li>
         </ul>
 
         <ul className='text-sm leading-tight pt-44 lowercase font-extralight'>
-          <li className="whitespace-nowrap"><a href='#'>admin</a></li>
+          <li className="whitespace-nowrap"><Link to="/admin">admin</Link></li>
           <li className="whitespace-nowrap"><a href='#'>re-sell platform</a></li>
-          <li className="whitespace-nowrap"><a href='#'>My account</a></li>
-          <li className="whitespace-nowrap"><a href='#'>Sign Up</a></li>
+          <li className="whitespace-nowrap"><Link to="/account">My account</Link></li>
+          <li className="whitespace-nowrap"><Link to="/connexion/signup">Sign Up</Link></li>
         </ul>
       </div>
 
