@@ -11,6 +11,8 @@ import Account from "./components/pages/Account";
 import Admin from "./components/pages/Admin";
 import Cart from "./components/pages/Cart";
 import Shipping from "./components/pages/Shipping";
+import Profil_form from "./components/atoms/Profil_form";
+import Profil_edit from "./components/atoms/Profil_edit";
 
 function App() {
 

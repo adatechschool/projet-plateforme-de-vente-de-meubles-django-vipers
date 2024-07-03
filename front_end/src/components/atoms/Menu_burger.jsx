@@ -41,12 +41,12 @@ bg-[#beaa7c] ${isMenuClicked ? '' : 'hidden'}`}>
           <li className="whitespace-nowrap"><Link to="/showproducts">Lamps</Link></li>        
           <li className="whitespace-nowrap"><Link to="/showproducts">Tables</Link></li>
           <li className="whitespace-nowrap"><Link to="/showproducts">Objects</Link></li>
-          <li className="whitespace-nowrap"><a href='#'>Favorites</a></li>
+          <li className="whitespace-nowrap"><a href='#'>Favourites</a></li>
         </ul>
 
         <ul className='text-sm leading-tight pt-44 lowercase font-extralight'>
           <li className="whitespace-nowrap"><Link to="/admin">admin</Link></li>
-          <li className="whitespace-nowrap"><a href='#'>re-sell platform</a></li>
+          <li className="whitespace-nowrap"><a href='#'>re-seller platform</a></li>
           <li className="whitespace-nowrap"><Link to="/account">My account</Link></li>
           <li className="whitespace-nowrap"><Link to="/connexion/signup">Sign Up</Link></li>
         </ul>
