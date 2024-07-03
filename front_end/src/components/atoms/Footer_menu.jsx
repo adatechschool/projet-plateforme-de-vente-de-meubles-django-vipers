@@ -12,7 +12,7 @@ const Footer_menu = () => {
           <a href="#">re-seller platform</a>
         </li>
         <li>
-          <Link to="/account">my account</Link>
+          <Link to="/account/profil">my account</Link>
         </li>
         <li>
           <a href="#">contact us</a>
