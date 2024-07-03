@@ -2,25 +2,10 @@ import Hero from "../organisms/Hero";
 import Recommandations from "../templates/Recommandations";
 import Arrivals from "../templates/Arrivals";
 import Categories from "../organisms/Categories";
-import React, { useState, useEffect } from "react";
+import {useFetch, useFetchFurniture} from "../../hooks/useFetch";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    try {
-      async function fetchFurniture() {
-        const furnitureData = await fetch(
-          "http://127.0.0.1:8000/api/furniture"
-        );
-        const parseFurnitureData = await furnitureData.json();
-        setProducts(parseFurnitureData);
-        console.log(parseFurnitureData);
-      }
-      fetchFurniture();
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
+  const [products] = useFetchFurniture();
 
   return (
     <div>

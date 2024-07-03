@@ -12,19 +12,16 @@ import Admin from "./components/pages/Admin";
 import Cart from "./components/pages/Cart";
 
 function App() {
+    return (
+        <>
+            <Router>
+                <div className="flex flex-col min-h-screen">
+                    <Navbar />
 
-  return (
-    <>
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-
-        <main className="grow">
-          
-          
-            <Routes>
-              {/* URL vers Home */}
-              <Route path="/" element={<Home />} />
+                    <main className="grow">
+                        <Routes>
+                            {/* URL vers Home */}
+                            <Route path="/" element={<Home />} />
 
                             {/* URL vers page de connexion, soit Login, soit Signup */}
                             <Route path="/connexion" element={<Connexion />}>
@@ -32,30 +29,31 @@ function App() {
                                 <Route path="signup" element={<SignupForm />} />
                             </Route>
 
-              {/* URL vers la page d'un produit */}
-              <Route path="/product" element={<Product />}/>
+                            {/* URL vers la page d'un produit */}
+                            <Route path="/product" element={<Product />} />
 
-              {/* URL vers la page des produits */}
-              <Route path="/showproducts" element={<Showproducts />}/>
+                            {/* URL vers la page des produits */}
+                            <Route
+                                path="/showproducts"
+                                element={<Showproducts />}
+                            />
 
-              {/* URL vers la page Profil */}
-              <Route path="/account" element={<Account />}/>
+                            {/* URL vers la page Profil */}
+                            <Route path="/account" element={<Account />} />
 
-              {/* URL vers la page Admin */}
-              <Route path="/admin" element={<Admin />}/>
+                            {/* URL vers la page Admin */}
+                            <Route path="/admin" element={<Admin />} />
 
-              {/* URL vers la page Panier */}
-              <Route path="/cart" element={<Cart />}/>
-            
-            
-            </Routes>
-        </main>
+                            {/* URL vers la page Panier */}
+                            <Route path="/cart" element={<Cart />} />
+                        </Routes>
+                    </main>
 
-        <Footer />
-      </div>
-      </Router>
-    </>
-  );
+                    <Footer />
+                </div>
+            </Router>
+        </>
+    );
 }
 
 export default App;
