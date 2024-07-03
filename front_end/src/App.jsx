@@ -10,6 +10,8 @@ import Showproducts from "./components/pages/Showproducts";
 import Account from "./components/pages/Account";
 import Admin from "./components/pages/Admin";
 import Cart from "./components/pages/Cart";
+import Profil_form from "./components/atoms/Profil_form";
+import Profil_edit from "./components/atoms/Profil_edit";
 
 function App() {
     return (
@@ -38,8 +40,11 @@ function App() {
                                 element={<Showproducts />}
                             />
 
-                            {/* URL vers la page Profil */}
-                            <Route path="/account" element={<Account />} />
+              {/* URL vers la page Profil */}
+              <Route path="/account" element={<Account />}>
+                <Route path="profil" element={<Profil_form />} />
+                <Route path="edit" element={<Profil_edit />}/>
+              </Route>
 
                             {/* URL vers la page Admin */}
                             <Route path="/admin" element={<Admin />} />
