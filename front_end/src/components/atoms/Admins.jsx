@@ -6,7 +6,7 @@ const Admins = () => {
     <div className='pr-7 flex space-x-4 font-light text-2xl'>
       <Link to="/">home.</Link>
       <Link to="/admin">admins.</Link>
-      <a href="#">espace vendeur.</a>
+      <a href="#">re-seller.</a>
     </div>
   )
 }
