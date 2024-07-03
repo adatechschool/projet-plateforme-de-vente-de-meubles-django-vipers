@@ -32,3 +32,8 @@ def login_user(request):
 
     form = AuthenticationForm()
     return render(request, 'users/login.html', {"form":form})
+
+
+def register_user(request):
+    pass
+
