@@ -74,6 +74,7 @@ const Product_details = ({ product }) => {
             <Add2cart />
             <Add2favourite item={product} onAddToFavourites={addToFavourites} />
           </div>
+          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
           <div>
           <Favourites favouriteItems={favouriteItems} />
           </div>

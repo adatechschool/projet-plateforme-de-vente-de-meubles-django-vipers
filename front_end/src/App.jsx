@@ -38,7 +38,7 @@ function App() {
               <Route path="/product" element={<Product />}/>
 
               {/* URL vers la page des produits */}
-              <Route path="/showproducts" element={<Showproducts />}/>
+              <Route path="/showproducts/:type_id" element={<Showproducts />} />
 
               {/* URL vers la page Profil */}
               <Route path="/account" element={<Account />}>
