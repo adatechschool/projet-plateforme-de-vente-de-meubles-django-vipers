@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
+  console.log("je suis les produits de home", products)
   useEffect(() => {
     try {
       async function fetchFurniture() {
@@ -14,7 +15,7 @@ const Home = () => {
         );
         const parseFurnitureData = await furnitureData.json();
         setProducts(parseFurnitureData);
-        console.log(parseFurnitureData);
+        console.log("parseFurnitureData", parseFurnitureData);
       }
       fetchFurniture();
     } catch (error) {
@@ -25,8 +26,8 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Recommandations recommandations = {products} />
-      <Arrivals arrivals = {products} />
+      <Recommandations recommandations={products} />
+      <Arrivals arrivals={products} />
       <Categories />
     </div>
   );
