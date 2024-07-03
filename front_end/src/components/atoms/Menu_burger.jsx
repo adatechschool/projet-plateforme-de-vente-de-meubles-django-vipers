@@ -49,7 +49,13 @@ bg-[#beaa7c] ${isMenuClicked ? '' : 'hidden'}`}>
           <li className="whitespace-nowrap"><a href='#'>re-seller platform</a></li>
 
           <li className="whitespace-nowrap"><Link to="/account/profil">My account</Link></li>
+
           <li className="whitespace-nowrap"><Link to="/account">My account</Link></li>
+
+
+          <li className="whitespace-nowrap"><Link to="/account">My account</Link></li>
+
+
           <li className="whitespace-nowrap"><Link to="/connexion/signup">Sign Up</Link></li>
         </ul>
       </div>

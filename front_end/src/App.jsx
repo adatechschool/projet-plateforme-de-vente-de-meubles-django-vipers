@@ -14,6 +14,10 @@ import Shipping from "./components/pages/Shipping";
 import Profil_form from "./components/atoms/Profil_form";
 import Profil_edit from "./components/atoms/Profil_edit";
 
+import Shipping from "./components/pages/Shipping";
+import Profil_form from "./components/atoms/Profil_form";
+import Profil_edit from "./components/atoms/Profil_edit";
+
 function App() {
 
   return (
