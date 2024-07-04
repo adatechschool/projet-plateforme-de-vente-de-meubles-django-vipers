@@ -10,7 +10,7 @@ const Cart = () => {
 
       <div class="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
         <div class="col-span-12 lg:col-span-2 img box">
-          <img src="" alt="" class="max-lg:w-full lg:w-[180px]" />
+          <img src="http://127.0.0.1:8000/media/images/vase_ocean2.jpg" alt="" class="max-lg:w-full lg:w-[180px]" />
         </div>
         <div class="col-span-12 lg:col-span-10 detail w-full lg:pl-3">
           <div class="flex items-center justify-between w-full mb-4">
@@ -23,7 +23,7 @@ const Cart = () => {
             </button>
           </div>
           <p class="font-normal text-base leading-7 text-gray-500 mb-6">
-            On peut mettre ce qu'on veut du moment que c'est en raport avec le produit du projet. <a href="javascript:;" class="text-indigo-600">More....</a>
+            On peut mettre ce qu'on veut du moment que c'est en rapport avec le produit du projet. <a href="javascript:;" class="text-indigo-600">More....</a>
           </p>
           <div class="flex justify-between items-center">
             <div class="flex items-center gap-4">
@@ -46,7 +46,7 @@ const Cart = () => {
 
       <div class="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
         <div class="col-span-12 lg:col-span-2 img box">
-          <img src="" alt="" class="max-lg:w-full lg:w-[180px]" />
+          <img src="http://127.0.0.1:8000/media/images/vase_ocean2.jpg" alt="" class="max-lg:w-full lg:w-[180px]" />
         </div>
         <div class="col-span-12 lg:col-span-10 detail w-full lg:pl-3">
           <div class="flex items-center justify-between w-full mb-4">
