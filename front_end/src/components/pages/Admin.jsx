@@ -2,9 +2,7 @@ import React from "react";
 import AdminAllProducts from "../organisms/AdminAllProducts";
 import {useFetchFurniture} from "../../hooks/useFetch";
 
-const Admin = () => {
-    const [products] = useFetchFurniture();
-
+const Admin = ({ products }) => {
     return (
         <div className="m-5">
             <h1>Administration</h1>

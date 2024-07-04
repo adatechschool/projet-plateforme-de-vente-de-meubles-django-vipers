@@ -12,8 +12,11 @@ import Admin from "./components/pages/Admin";
 import Cart from "./components/pages/Cart";
 import Profil_form from "./components/atoms/Profil_form";
 import Profil_edit from "./components/atoms/Profil_edit";
+import { useFetch, useFetchFurniture } from "./hooks/useFetch";
 
 function App() {
+    const [products] = useFetchFurniture();
+
     return (
         <>
             <Router>
@@ -23,7 +26,10 @@ function App() {
                     <main className="grow">
                         <Routes>
                             {/* URL vers Home */}
-                            <Route path="/" element={<Home />} />
+                            <Route
+                                path="/"
+                                element={<Home products={products} />}
+                            />
 
                             {/* URL vers page de connexion, soit Login, soit Signup */}
                             <Route path="/connexion" element={<Connexion />}>
@@ -40,14 +46,20 @@ function App() {
                                 element={<Showproducts />}
                             />
 
-              {/* URL vers la page Profil */}
-              <Route path="/account" element={<Account />}>
-                <Route path="profil" element={<Profil_form />} />
-                <Route path="edit" element={<Profil_edit />}/>
-              </Route>
+                            {/* URL vers la page Profil */}
+                            <Route path="/account" element={<Account />}>
+                                <Route
+                                    path="profil"
+                                    element={<Profil_form />}
+                                />
+                                <Route path="edit" element={<Profil_edit />} />
+                            </Route>
 
                             {/* URL vers la page Admin */}
-                            <Route path="/admin" element={<Admin />} />
+                            <Route
+                                path="/admin"
+                                element={<Admin products={products} />}
+                            />
 
                             {/* URL vers la page Panier */}
                             <Route path="/cart" element={<Cart />} />

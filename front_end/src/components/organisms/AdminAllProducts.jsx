@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-
 export default function AdminAllProducts({ products }) {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
@@ -14,39 +12,6 @@ export default function AdminAllProducts({ products }) {
 
 function FurnitureForm({ product }) {
     const dimensionsRegex = /([\d]+)X([\d]+)X([\d]+)/;
-
-    let [types, setTypes] = useState([]);
-    let [colors, setColors] = useState([]);
-    let [materials, setMaterials] = useState([]);
-
-    useEffect(() => {
-        try {
-            async function fetchTypes() {
-                let typesData = await fetch("http://127.0.0.1:8000/api/type");
-                let parsedTypes = await typesData.json();
-                setTypes(parsedTypes);
-                console.log(parsedTypes);
-            }
-
-            async function fetchColors() {
-                let colorsData = await fetch("http://127.0.0.1:8000/api/color");
-                let parsedColors = await colorsData.json();
-                setColors(parsedColors);
-            }
-
-            async function fetchMaterials() {
-                let materialsData = await fetch(
-                    "http://127.0.0.1:8000/api/material"
-                );
-                let parsedMaterials = await materialsData.json();
-                setMaterials(parsedMaterials);
-            }
-
-            fetchTypes();
-            fetchColors();
-            fetchMaterials();
-        } catch (error) {console.log(error)}
-    }, []);
 
     return (
         <div className="card card-compact card-bordered">
