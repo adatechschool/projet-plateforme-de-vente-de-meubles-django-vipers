@@ -7,6 +7,7 @@ const Product_photo = ({ product }) => {
     src={ product.image1 }
     alt=""
     className="object-cover rounded-box h-full"
+    loading="lazy"
   /> </>
   )
 }

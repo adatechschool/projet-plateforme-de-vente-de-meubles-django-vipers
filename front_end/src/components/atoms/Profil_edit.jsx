@@ -1,6 +1,11 @@
 import React from "react";
 
 const Profil_edit = () => {
+
+  function popup(){
+    alert ("Profil update!")
+  }
+
   return (
     <div className="flex flex-col mx-auto my-8 w-fit">
       <div>
@@ -33,7 +38,7 @@ const Profil_edit = () => {
           <label>Phone number : </label>
           <input type="text" className="text-black rounded float-right"/>
         </div>
-        <button className="btn bg-[rgb(198 182 150)] mx-auto">Edit</button>
+        <button className="btn bg-[rgb(198 182 150)] mx-auto" onClick={popup}>Edit</button>
       </div>
     </div>
   );
