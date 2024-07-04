@@ -12,6 +12,8 @@ import Admin from "./components/pages/Admin";
 import Cart from "./components/pages/Cart";
 import Profil_form from "./components/atoms/Profil_form";
 import Profil_edit from "./components/atoms/Profil_edit";
+import Reseller from "./components/pages/Reseller";
+import Privacy from "./components/pages/Privacy";
 import { useFetch, useFetchFurniture } from "./hooks/useFetch";
 
 function App() {
@@ -40,11 +42,8 @@ function App() {
                             {/* URL vers la page d'un produit */}
                             <Route path="/product" element={<Product />} />
 
-                            {/* URL vers la page des produits */}
-                            <Route
-                                path="/showproducts"
-                                element={<Showproducts />}
-                            />
+              {/* URL vers la page des produits */}
+              <Route path="/showproducts/:type_id" element={<Showproducts />} />
 
                             {/* URL vers la page Profil */}
                             <Route path="/account" element={<Account />}>
@@ -61,10 +60,18 @@ function App() {
                                 element={<Admin products={products} />}
                             />
 
-                            {/* URL vers la page Panier */}
-                            <Route path="/cart" element={<Cart />} />
-                        </Routes>
-                    </main>
+              {/* URL vers la page Panier */}
+              <Route path="/cart" element={<Cart />}/>
+
+              {/* URL vers la page Re seller */}
+              <Route path="/reseller" element={<Reseller />}/>
+
+              {/* URL vers la page Privacy */}
+              <Route path="/privacy" element={<Privacy />}/>
+            
+            
+            </Routes>
+        </main>
 
                     <Footer />
                 </div>
