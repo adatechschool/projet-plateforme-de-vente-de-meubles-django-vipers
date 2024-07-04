@@ -3,7 +3,7 @@ import React from 'react'
 const Reseller = () => {
   return (
     <div className="card card-compact card-bordered">
-      <h1 className='font-semibold text-2xl text-center m-4'>Add Furniture</h1>
+      <h1 className='font-thin text-2xl text-left ml-60 m-4'>Add Furniture</h1>
             <form className="card-body box-border mx-60" action="post">
                 <label htmlFor="name">Name :</label>
                 <input
