@@ -9,7 +9,7 @@ const Footer_menu = () => {
           <Link to="/admin">admin</Link>
         </li>
         <li>
-          <a href="#">re-seller platform</a>
+        <Link to="/reseller">re-seller platform</Link>
         </li>
         <li>
           <Link to="/account/profil">my account</Link>
@@ -18,7 +18,7 @@ const Footer_menu = () => {
           <a href="#">contact us</a>
         </li>
         <li>
-          <a href="#">Privacy Policy</a>
+          <Link to="/privacy">Privacy Policy</Link>
         </li>
       </ul>
     </div>
