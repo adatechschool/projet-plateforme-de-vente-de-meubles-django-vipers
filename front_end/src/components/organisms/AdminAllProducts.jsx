@@ -13,6 +13,18 @@ export default function AdminAllProducts({ products }) {
 function FurnitureForm({ product }) {
     const dimensionsRegex = /([\d]+)X([\d]+)X([\d]+)/;
 
+    function updateFurniture(id) {
+        
+    }
+
+    function handleModify(e) {
+        e.preventDefault();
+    }
+
+    function handleDelete() {
+
+    }
+
     return (
         <div className="card card-compact card-bordered">
             <form className="card-body box-border" action="post">
@@ -54,10 +66,13 @@ function FurnitureForm({ product }) {
                 ></textarea>
 
                 <div className="card-actions justify-between mt-3">
-                    <button className="btn bg-[#beaa7c] text-white">
+                    <button
+                        type="submit"
+                        className="btn bg-[#beaa7c] text-white"
+                    >
                         Modifier
                     </button>
-                    <button className="btn bg-red-700 text-white">
+                    <button type="submit" className="btn bg-red-700 text-white">
                         Supprimer
                     </button>
                 </div>

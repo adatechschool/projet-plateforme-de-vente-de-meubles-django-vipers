@@ -57,3 +57,44 @@ export function useFetchFurniture() {
 
     return [furniture];
 }
+
+export function useFetchOneFurniture(furnitureId) {
+    const [oneFurniture, setOneFurniture] = useState({});
+
+    useEffect(() => {
+        async function getData(url) {
+            let data = await fetch(url);
+            let parsedData = await data.json();
+            return parsedData;
+        }
+
+        async function fetchData() {
+            const [oneFurniture, types, colors, materials] = await Promise.all([
+                getData("http://127.0.0.1:8000/api/furniture/" + furnitureId),
+                getData("http://127.0.0.1:8000/api/type"),
+                getData("http://127.0.0.1:8000/api/color"),
+                getData("http://127.0.0.1:8000/api/material"),
+            ]);
+
+            const colorsNames = colors.filter((color) =>
+                oneFurniture.colors.includes(color.id)
+            );
+            const typeName = types.find((type) => (furniture.type = type.id));
+            const materialsNames = materials.filter((material) =>
+                oneFurniture.materials.includes(material.id)
+            );
+            
+            detailedFurniture = {
+                ...oneFurniture,
+                colors: colorsNames,
+                type: typeName,
+                materials: materialsNames,
+            };
+            console.log("modified furniture list :", detailedFurnitureList);
+            setOneFurniture(detailedFurniture);
+        }
+        fetchData();
+    }, []);
+
+    return [oneFurniture];
+}
