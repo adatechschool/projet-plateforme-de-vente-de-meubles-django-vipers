@@ -1,0 +1,12 @@
+<h1>connexion</h1>
+
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value='se conencter'>
+</form>
