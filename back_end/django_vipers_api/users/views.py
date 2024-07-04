@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from django.contrib import messages
 from .forms import UserRegistrationForm, LoginForm
+from rest_framework.response import Response
+from rest_framework.views import APIView
 
 # Create your views here.
 from rest_framework import viewsets
@@ -43,3 +45,26 @@ def register_user(request):
     else:
         form = UserRegistrationForm()
     return render(request, 'users/register.html', {'form': form})
+
+
+class LoginView(APIView):
+    def post(self, request):
+        user = authenticate(username=request.data['username'], password=request.data['password'])
+        if user:
+            return Response({'message': "Connection !", "login": True})        
+        else:
+            return Response({'error': 'Invalid credentials'}, status=401)
+        
+class SignupView(APIView):
+    def post(self,request):
+        user = request.data.get('user')
+        
+        serializer = UserSerializer(data=user)
+        if serializer.is_valid(raise_exception=True):
+            user_saved = serializer.save()
+            return Response({"success": "User '{}' created successfully".format(user_saved.username)})
+        else:
+            return Response({"error": "error"})
+            
+
+        
