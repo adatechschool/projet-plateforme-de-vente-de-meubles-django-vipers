@@ -15,9 +15,6 @@ const Footer_menu = () => {
           <Link to="/account/profil">my account</Link>
         </li>
         <li>
-          <a href="#">contact us</a>
-        </li>
-        <li>
           <Link to="/privacy">Privacy Policy</Link>
         </li>
       </ul>

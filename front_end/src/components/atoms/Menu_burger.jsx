@@ -41,7 +41,6 @@ bg-[#beaa7c] ${isMenuClicked ? '' : 'hidden'}`}>
           <li className="whitespace-nowrap"><Link to="/showproducts/2">Lamps</Link></li>        
           <li className="whitespace-nowrap"><Link to="/showproducts/3">Tables</Link></li>
           <li className="whitespace-nowrap"><Link to="/showproducts/4">Objects</Link></li>
-          <li className="whitespace-nowrap"><a href='#'>Favourites</a></li>
         </ul>
 
         <ul className='text-sm leading-tight pt-44 lowercase font-extralight'>
