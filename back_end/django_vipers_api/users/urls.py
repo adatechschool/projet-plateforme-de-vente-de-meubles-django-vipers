@@ -12,7 +12,7 @@ urlpatterns = [
        
 ]
 
-router = DefaultRouter()
-router.register('users', UserViewSet, 'user')
+""" router = DefaultRouter()
+router.register('users', UserViewSet, 'user') """
 
 
