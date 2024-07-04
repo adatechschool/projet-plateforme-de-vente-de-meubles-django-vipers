@@ -64,12 +64,12 @@ const Product_details = ({ product }) => {
           {product.name}
         </h2>
         <div className="mt-2 mb-2 space-y-2">
-          <div>Dimensions: {product.dimensions}</div>
-          <div>Descriptions: {product.description}</div>
-          <div>Availability: {product.available}</div>
+          <div>Dimensions: {product.dimensions}cm</div>
+          <div>Description: {product.description}</div>
           <div>Category: {product.type}</div>
           <div>Color/s: {product.colors}</div>
-          <div>Materials: {product.materials_id}</div>
+          <div>Materials: {product.materials}</div>
+          <div>Price: {product.price}€</div>
           <div className='flex flex-wrap flex-row gap-0.5 w-full'>
             <Add2cart />
             <Add2favourite item={product} onAddToFavourites={addToFavourites} />
