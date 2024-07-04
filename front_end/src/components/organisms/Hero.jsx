@@ -11,7 +11,7 @@ const Hero = () => {
                     <h1 className='text-8xl font-thin pb-5 text-left pl-16 z-10'>vipers furnitures</h1>
                 </div>
                 <div className='z-1 pt-3'>
-                    <img src={heroBanneer} alt="Not found" className="w-[1000px] h-auto mx-auto" />
+                    <img src={heroBanneer} alt="Not found" className="w-[1000px] h-auto mx-auto" loading="lazy"/>
                 </div>
             </div>
 
