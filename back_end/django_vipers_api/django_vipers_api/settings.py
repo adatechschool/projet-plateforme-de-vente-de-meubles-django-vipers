@@ -143,6 +143,18 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = "users.User"
+
 CORS_ALLOW_ALL_ORIGINS = True
 from corsheaders.defaults import default_methods
 from corsheaders.defaults import default_headers
+
+# settings.py
+
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    'django.contrib.auth.hashers.Argon2PasswordHasher',
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+]
+

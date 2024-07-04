@@ -8,10 +8,11 @@ app_name = 'users'
 
 urlpatterns = [
     path('login/', views.login_user, name ='login'), 
-    path('register/', views.register_user, name ='register'), 
-    
+    path('register/', views.register_user, name='register'),
+       
 ]
 
 router = DefaultRouter()
 router.register('users', UserViewSet, 'user')
+
 
