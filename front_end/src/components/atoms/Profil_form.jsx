@@ -11,7 +11,7 @@ const Profil_form = () => {
         <p>Password : ********</p>
         <p>Adress : 116 Rue du Faubourg Saint Martin, Paris, France</p>
         <p>Phone number : +33 6 50 48 65 54</p>
-        <div><Link to="../edit"><button className="btn bg-[rgb(198 182 150)] mx-auto">Modifier</button></Link></div>
+        <div><Link to="../edit"><button className="btn bg-[rgb(198 182 150)] mx-auto">Edit</button></Link></div>
 
       </div>
     </div>

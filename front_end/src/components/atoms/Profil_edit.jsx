@@ -33,7 +33,7 @@ const Profil_edit = () => {
           <label>Phone number : </label>
           <input type="text" className="text-black rounded float-right"/>
         </div>
-        <button className="btn bg-[rgb(198 182 150)] mx-auto">Modifier</button>
+        <button className="btn bg-[rgb(198 182 150)] mx-auto">Edit</button>
       </div>
     </div>
   );
