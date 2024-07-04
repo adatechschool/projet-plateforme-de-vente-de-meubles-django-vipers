@@ -67,8 +67,8 @@ const Product_details = ({ product }) => {
           <div>Dimensions: {product.dimensions}cm</div>
           <div>Description: {product.description}</div>
           <div>Category: {product.type}</div>
-          <div>Color/s: {product.colors}</div>
-          <div>Materials: {product.materials}</div>
+          <div>Color: {product.colors}</div>
+          <div>Material: {product.materials}</div>
           <div>Price: {product.price}€</div>
           <div className='flex flex-wrap flex-row gap-0.5 w-full'>
             <Add2cart />

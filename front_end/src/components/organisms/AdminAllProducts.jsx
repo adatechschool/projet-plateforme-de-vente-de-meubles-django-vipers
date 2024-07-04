@@ -28,7 +28,7 @@ function FurnitureForm({ product }) {
     return (
         <div className="card card-compact card-bordered">
             <form className="card-body box-border" action="post">
-                <label htmlFor="name">Nom :</label>
+                <label htmlFor="name">Name :</label>
                 <input
                     className="input input-bordered card-title"
                     type="text"
@@ -70,10 +70,10 @@ function FurnitureForm({ product }) {
                         type="submit"
                         className="btn bg-[#beaa7c] text-white"
                     >
-                        Modifier
+                        Edit
                     </button>
                     <button type="submit" className="btn bg-red-700 text-white">
-                        Supprimer
+                        Delete
                     </button>
                 </div>
             </form>
