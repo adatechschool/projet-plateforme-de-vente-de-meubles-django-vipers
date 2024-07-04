@@ -1,15 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react'; 
 import { Link } from "react-router-dom";
 
 const Menu_burger = () => {
   const [isMenuClicked, setIsMenuClicked] = useState(false);
+  const menuRef = useRef(null); 
 
   const handleIsMenuClicked = () => {
     setIsMenuClicked(!isMenuClicked);
   };
 
+  useEffect(() => { 
+    const handleClickOutside = (event) => { 
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuClicked(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className='relative pl-8 pb-5'>
+    <div className='relative pl-8 pb-5' ref={menuRef}>
 
       {/* BOUTON BURGER */}
       <div className='z-50 relative'>
@@ -38,8 +52,8 @@ const Menu_burger = () => {
 bg-[#beaa7c] ${isMenuClicked ? '' : 'hidden'}`}>
         <ul className='text-2xl lowercase font-bold'>
           <li className="whitespace-nowrap"><Link to="/showproducts/1">Chairs</Link></li> 
-          <li className="whitespace-nowrap"><Link to="/showproducts/2">Lamps</Link></li>        
-          <li className="whitespace-nowrap"><Link to="/showproducts/3">Tables</Link></li>
+          <li className="whitespace-nowrap"><Link to="/showproducts/3">Lamps</Link></li>        
+          <li className="whitespace-nowrap"><Link to="/showproducts/2">Tables</Link></li>
           <li className="whitespace-nowrap"><Link to="/showproducts/4">Objects</Link></li>
         </ul>
 
