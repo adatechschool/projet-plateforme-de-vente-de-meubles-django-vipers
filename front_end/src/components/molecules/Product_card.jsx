@@ -17,7 +17,7 @@ const Product_card = ({ product }) => {
             <Link to={"/product?id="+ product.id}><h2 className="font-bold text-black text-lg">{product.name}</h2></Link>
             <Product_price product={product} />
           </div>
-          <div className="flex flex-wrap flex-row gap-0.5 w-full">
+          <div className="flex w-full gap-12">
             <Add2cart />
             <Add2favourite />
           </div>

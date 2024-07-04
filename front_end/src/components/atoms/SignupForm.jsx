@@ -1,7 +1,7 @@
 export default function SignupForm() {
     return (
         <div>
-            <h1 className="my-5 text-2xl">Inscription</h1>
+            <h1 className="my-5 text-2xl">Sign Up</h1>
             <form method="post" className="flex flex-col items-start gap-y-5">
                 <label
                     htmlFor="username"
@@ -26,6 +26,12 @@ export default function SignupForm() {
                     Password
                     <input type="password" name="password" id="password" />
                 </label>
+
+                <div className="card-actions justify-start mt-3">
+                    <button className="btn bg-[#beaa7c] text-white">
+                        Sign Up
+                    </button>
+                </div>
             </form>
         </div>
     );

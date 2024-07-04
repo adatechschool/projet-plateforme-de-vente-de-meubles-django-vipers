@@ -5,7 +5,7 @@ const Contact_us = () => {
     <div className='font-extralight text-xs items-center text-center'>
 
 
-      <p>116 Rue du Faubourd Saint Martin, Paris, France</p>
+      <p>116 Rue du Faubourg Saint Martin, Paris, France</p>
       <p> +33 6 50 48 65 54</p>
       <p>django_vipers@adatech.com</p>
 

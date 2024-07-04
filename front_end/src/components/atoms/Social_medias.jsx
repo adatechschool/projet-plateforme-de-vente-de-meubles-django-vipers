@@ -15,11 +15,11 @@ const Social_medias = () => {
     
         
       <ul className='flex space-x-4 w-[200px]'>
-          <li><a href="https://www.facebook.com"><img src={facebookLogo} alt="" /></a></li>
-          <li><a href="https://www.twitter.com"><img src={twitterLogo} alt="" /></a></li>
-          <li><a href="https://www.instagram.com"><img src={instagramLogo} alt="" /></a></li>
-          <li><a href="https://www.linkedin.com"><img src={linkedinLogo} alt="" /></a></li>
-          <li><a href="https://www.tiktok.com"><img src={tiktokLogo} alt="" /></a></li>
+          <li><a href="https://www.facebook.com" target='_blank'><img src={facebookLogo} alt="" /></a></li>
+          <li><a href="https://www.twitter.com" target='_blank'><img src={twitterLogo} alt="" /></a></li>
+          <li><a href="https://www.instagram.com" target='_blank'><img src={instagramLogo} alt="" /></a></li>
+          <li><a href="https://www.linkedin.com" target='_blank'><img src={linkedinLogo} alt="" /></a></li>
+          <li><a href="https://www.tiktok.com" target='_blank'><img src={tiktokLogo} alt="" /></a></li>
 
         </ul>
       </div>
